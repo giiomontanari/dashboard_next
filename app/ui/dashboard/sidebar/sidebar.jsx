@@ -1,7 +1,7 @@
 import styles from "./sidebar.module.css";
 import MenuLink from "./menuLink/menulink";
 import Image from "next/image";
-import { MdDashboard, FaUserPlus } from "react-icons/md";
+import { MdDashboard, FaUserPlus, MdLogout } from "react-icons/md";
 
 const menuItems = [
   {
@@ -30,11 +30,6 @@ const menuItems = [
       {
         title: "Help",
         path: "/help",
-        icon: <MdDashboard />,
-      },
-      {
-        title: "Logout",
-        path: "/logout",
         icon: <MdDashboard />,
       },
     ],
@@ -67,6 +62,10 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
+      <button className={styles.logout}>
+        <MdLogout />
+        Logout
+      </button>
     </div>
   );
 };
