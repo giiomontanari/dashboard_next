@@ -6,9 +6,9 @@ const DashboardPage = () => {
     <div className={styles.wrapper}>
       <div className={styles.main}>
         <div className={styles.boards}>
-          <Board />
-          <Board />
-          <Board />
+          <Board titleBoard="EM ABERTO" />
+          <Board titleBoard="EM ANDAMENTO" />
+          <Board titleBoard="FINALIZADO" />
         </div>
       </div>
     </div>

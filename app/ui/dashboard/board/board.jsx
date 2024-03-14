@@ -1,11 +1,11 @@
 import styles from "./board.module.css";
 import Card from "../card/card";
 
-const Board = () => {
+const Board = ({ titleBoard }) => {
   return (
     <div className={styles.container}>
       <div className={styles.status}>
-        <p>EM ABERTO</p>
+        <p>{titleBoard}</p>
       </div>
       <Card />
       <Card />
