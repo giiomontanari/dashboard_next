@@ -1,7 +1,9 @@
 import styles from "./sidebar.module.css";
 import MenuLink from "./menuLink/menulink";
 import Image from "next/image";
-import { MdDashboard, FaUserPlus, MdLogout } from "react-icons/md";
+import { MdDashboard, MdLogout, MdOutlineHelpOutline } from "react-icons/md";
+import { IoMdSettings, IoIosHelpCircleOutline } from "react-icons/io";
+import { FaUsers } from "react-icons/fa";
 
 const menuItems = [
   {
@@ -15,7 +17,7 @@ const menuItems = [
       {
         title: "Users",
         path: "/dashboard/users",
-        icon: <MdDashboard />,
+        icon: <FaUsers />,
       },
     ],
   },
@@ -25,12 +27,12 @@ const menuItems = [
       {
         title: "Settings",
         path: "/settings",
-        icon: <MdDashboard />,
+        icon: <IoMdSettings />,
       },
       {
         title: "Help",
         path: "/help",
-        icon: <MdDashboard />,
+        icon: <MdOutlineHelpOutline />,
       },
     ],
   },
