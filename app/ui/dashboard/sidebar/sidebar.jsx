@@ -15,6 +15,11 @@ const menuItems = [
         icon: <MdDashboard />,
       },
       {
+        title: "Operators",
+        path: "/dashboard/operators",
+        icon: <FaUsers />,
+      },
+      {
         title: "Users",
         path: "/dashboard/users",
         icon: <FaUsers />,
