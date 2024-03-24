@@ -4,13 +4,21 @@ const AddOperator = () => {
   return (
     <div className={styles.container}>
       <form action="" className={styles.form}>
-        <input type="text" placeholder="Nome" name="name" required />
+        <input type="text" placeholder="username" name="username" required />
         <input type="email" placeholder="E-mail" name="email" required />
         <input type="password" placeholder="Senha" name="password" required />
-        <input type="text" placeholder="Telefone" name="phone" required />
-        <select name="type" id="type">
-          <option value="operator">Operator</option>
-          <option value="admin">Admin</option>
+        <input type="text" placeholder="Telefone" name="phone" />
+        <select name="isAdmin" id="isAdmin">
+          <option value={false} selected>
+            Operator
+          </option>
+          <option value={true}>Admin</option>
+        </select>
+        <select name="isActive" id="isActive">
+          <option value={true} selected>
+            Ativado
+          </option>
+          <option value={false}>Desativado</option>
         </select>
         <button type="submit" className={styles.button}>
           Submit

@@ -43,7 +43,7 @@ const OperatorsPage = () => {
             <td>Ativo</td>
             <td>
               <div className={styles.buttons}>
-                <Link href="/">
+                <Link href="/dashboard/operators/test">
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
